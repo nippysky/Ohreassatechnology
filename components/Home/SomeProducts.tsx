@@ -29,7 +29,11 @@ export default function SomeProducts({
         </div>
 
         <div className="lg:w-1/2 w-full lg:justify-end flex items-center">
-          <Link href={"wa.link/39g951"}>
+          <Link
+            href={
+              "https://api.whatsapp.com/send?phone=2348020631346&text=Hi%20*Ohreassa*%20I%20will%20love%20to%20get%20purchase%20some%20of%20your%20products."
+            }
+          >
             <button className=" bg-mainPurple text-center text-[0.75rem] font-semibold uppercase text-white tracking-wider py-3 px-5 hover:bg-mainYellow rounded-full">
               ShOP FROM OUR WHATSAPP
             </button>
