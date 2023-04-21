@@ -22,6 +22,7 @@ export default function ProdutItem({ name, image, slug, price }: Prop) {
           width={360}
           height={360}
           priority
+          unoptimized
         />
       </div>
 

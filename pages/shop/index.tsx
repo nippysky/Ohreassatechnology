@@ -1,10 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
-import client from "@/utils/client";
-import SomeProducts from "@/components/Home/SomeProducts";
-import FeatureCard from "@/components/FeatureCard";
+import React from "react";
+import client from "../../utils/client";
+import ShopFeed from "@/components/Shop/ShopFeed";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Home/Hero";
 
 type ProductsObject = {
   _id: string;
@@ -17,30 +16,28 @@ type ProductsObject = {
   otherImages: any[];
 }[];
 
-export default function Home({ products }: { products: ProductsObject }) {
+export default function Shop({ products }: { products: ProductsObject }) {
   return (
     <>
       <Head>
-        <title>Ohreassa Technolgy - Home</title>
-        <meta name="description" content="Ohreassa Technology." />
+        <title>Ohreassa Technology - Shop Page</title>
+        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
-      <Hero />
 
-      <main>
-        <SomeProducts products={products} />
-        <FeatureCard />
-      </main>
+      <section className="w-full px-5 lg:px-32 py-1 my-10">
+        <div className="mb-20 text-[2rem] font-bold">Our Solar Shop</div>
+
+        <ShopFeed products={products} />
+      </section>
 
       <Footer />
     </>
   );
 }
-
-// className="px-5 lg:px-32"
 
 export async function getStaticProps() {
   type ProductsObject = {

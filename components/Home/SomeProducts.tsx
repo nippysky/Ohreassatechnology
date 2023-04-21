@@ -21,15 +21,15 @@ export default function SomeProducts({
 }) {
   return (
     <section className="px-5 lg:px-40 mb-40">
-      <section className="w-full flex gap-5 justify-between items-center my-10">
-        <div className="w-1/2 flex justify-start">
+      <section className="w-full flex flex-col lg:flex-row gap-5 justify-between items-center my-10">
+        <div className="lg:w-1/2 w-full flex justify-start">
           <h1 className="font-black uppercase text-black tracking-wide text-2xl">
             Patronize The Best
           </h1>
         </div>
 
-        <div className="w-1/2 justify-end flex items-center">
-          <Link href={"https://wa.link/7b120q"}>
+        <div className="lg:w-1/2 w-full lg:justify-end flex items-center">
+          <Link href={"https://wa.link/eyxs7n"}>
             <button className=" bg-mainPurple text-center text-[0.75rem] font-semibold uppercase text-white tracking-wider py-3 px-5 hover:bg-mainYellow rounded-full">
               ShOP FROM OUR WHATSAPP
             </button>
@@ -47,7 +47,7 @@ export default function SomeProducts({
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ ease: "easeOut", duration: 1 }}
-            className="border-[0.02rem] rounded-xl border-mainPurple p-3"
+            className=" rounded-xl  p-3"
           >
             <ProdutItem
               name={product.name}

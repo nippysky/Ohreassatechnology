@@ -12,6 +12,7 @@ import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import numberToCurrency from "@/utils/convertNumberToCurrency";
+import Footer from "@/components/Footer";
 
 type ProductsObject = {
   _id: string;
@@ -125,45 +126,43 @@ export default function ProductDetails({
   };
 
   // Fucntion To Display Inline Video
-  const inlineVideo = () => {
-    if (product.name === "SOLAR LUXURY WALL LAMPS") {
-      return (
-        <video width="320" height="240" controls>
-          <source src="/brand/slwl.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      );
-    } else if (product.name === "SOLAR STREET LIGHT 1200W") {
-      return (
-        <video width="320" height="240" controls>
-          <source src="/brand/ssl1200.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      );
-    } else if (product.name === "SOLAR STREET LIGHT 400W") {
-      return (
-        <video width="320" height="240" controls>
-          <source src="/brand/ssl400.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      );
-    } else {
-      return null;
-    }
-  };
+  // const inlineVideo = () => {
+  //   if (product.name === "SOLAR LUXURY WALL LAMPS") {
+  //     return (
+  //       <video width="320" height="240" controls>
+  //         <source src="/brand/slwl.mp4" type="video/mp4" />
+  //         Your browser does not support the video tag.
+  //       </video>
+  //     );
+  //   } else if (product.name === "SOLAR STREET LIGHT 1200W") {
+  //     return (
+  //       <video width="320" height="240" controls>
+  //         <source src="/brand/ssl1200.mp4" type="video/mp4" />
+  //         Your browser does not support the video tag.
+  //       </video>
+  //     );
+  //   } else if (product.name === "SOLAR STREET LIGHT 400W") {
+  //     return (
+  //       <video width="320" height="240" controls>
+  //         <source src="/brand/ssl400.mp4" type="video/mp4" />
+  //         Your browser does not support the video tag.
+  //       </video>
+  //     );
+  //   } else {
+  //     return null;
+  //   }
+  // };
 
   return (
     <>
       <Head>
-        <title>{product.name} - MarionTech</title>
+        <title>{product.name} - Ohreassa Technology</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="w-full px-5 lg:px-20">
-        <Navbar />
-      </header>
+      <Navbar />
 
       <section className="w-full px-5 lg:px-32 py-3 mt-3">
         {/* go back arrow */}
@@ -295,7 +294,7 @@ export default function ProductDetails({
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href={`https://api.whatsapp.com/send?phone=2349015103153&text=Hi%20*Marion.*%20I%20am%20interested%20in%20*${quantity}*%20of%20the%20*${
+              href={`https://api.whatsapp.com/send?phone=2348122214307&text=Hi%20*Marion.*%20I%20am%20interested%20in%20*${quantity}*%20of%20the%20*${
                 product.name
               }*%20${
                 variation === "" ? "" : variation
@@ -324,7 +323,7 @@ export default function ProductDetails({
             <p className=" tracking-wide leading-7">{product.description}</p>
 
             <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-20 place-items-center place-content-center mt-10">
-              {product.otherImages.map((image, index) => (
+              {product.otherImages?.map((image, index) => (
                 <motion.div
                   key={index}
                   className="border border-mainPurple p-3"
@@ -339,13 +338,14 @@ export default function ProductDetails({
                     width={360}
                     height={360}
                     priority
+                    unoptimized
                   />
                 </motion.div>
               ))}
             </div>
           </div>
 
-          <div className="mt-5">{inlineVideo()}</div>
+          {/* <div className="mt-5">{inlineVideo()}</div> */}
         </section>
 
         {/* MORE FROM COLLECTION */}
@@ -360,7 +360,7 @@ export default function ProductDetails({
 
           <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center place-content-center mt-10">
             {allProducts.slice(0, 3).map((product: any) => (
-              <div key={product._id} className="border border-mainPurple p-3">
+              <div key={product._id} className=" p-3">
                 <a href={`/shop/${product.slug.current}`}>
                   {/* image */}
                   <div className="">
@@ -378,7 +378,7 @@ export default function ProductDetails({
                     {product.name}
                   </p>
                   {/* price */}
-                  <p className="text-mainBlue font-bold text-xl my-2">
+                  <p className="text-mainPurple font-bold text-xl my-2">
                     ₦{numberToCurrency(product.price)}
                   </p>
                 </a>
@@ -395,6 +395,8 @@ export default function ProductDetails({
           </div>
         </motion.section>
       </section>
+
+      <Footer />
     </>
   );
 }
