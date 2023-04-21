@@ -3,7 +3,6 @@ import type { AppProps } from "next/app";
 import NextNProgress from "nextjs-progressbar";
 import { Inter } from "next/font/google";
 import ScrollUp from "@/components/ScrollUp";
-import { NextFont } from "@next/font";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -12,7 +11,7 @@ import { store } from "../redux/store";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 
-const inter: NextFont = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 let persistor = persistStore(store);
 
