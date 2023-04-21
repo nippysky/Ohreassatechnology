@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import React from "react";
 import { useSelector } from "react-redux";
 import { RiShoppingCartLine } from "react-icons/ri";
+import Image from "next/image";
+import Logo from "../public/home/OhreassaWhite.svg";
 
 export default function Navbar() {
   const { asPath } = useRouter();
@@ -14,7 +16,13 @@ export default function Navbar() {
       {/* Logo */}
       <Link href={"/"}>
         <div className="w-[30%] text-white font-semibold text-[1.5rem]">
-          Ohreassa
+          <Image
+            src={Logo}
+            alt="Ohreassa Logo"
+            unoptimized
+            width={400}
+            height={100}
+          />
         </div>
       </Link>
 

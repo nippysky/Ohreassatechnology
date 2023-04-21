@@ -29,7 +29,7 @@ export default function SomeProducts({
         </div>
 
         <div className="lg:w-1/2 w-full lg:justify-end flex items-center">
-          <Link href={"https://wa.link/eyxs7n"}>
+          <Link href={"wa.link/39g951"}>
             <button className=" bg-mainPurple text-center text-[0.75rem] font-semibold uppercase text-white tracking-wider py-3 px-5 hover:bg-mainYellow rounded-full">
               ShOP FROM OUR WHATSAPP
             </button>

@@ -32,6 +32,7 @@ export default function ScrollUp() {
           onClick={scrollUp}
           style={{
             position: "fixed",
+            zIndex: 1000,
             bottom: "10px",
             right: "5px",
             height: "50px",

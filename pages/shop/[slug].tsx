@@ -294,7 +294,7 @@ export default function ProductDetails({
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href={`https://api.whatsapp.com/send?phone=2348122214307&text=Hi%20*Marion.*%20I%20am%20interested%20in%20*${quantity}*%20of%20the%20*${
+              href={`https://api.whatsapp.com/send?phone=2348020631346&text=Hi%20*Marion.*%20I%20am%20interested%20in%20*${quantity}*%20of%20the%20*${
                 product.name
               }*%20${
                 variation === "" ? "" : variation

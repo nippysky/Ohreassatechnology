@@ -55,7 +55,7 @@ export default function Checkout() {
 
     // redirect to profile page
     router.replace(
-      `https://api.whatsapp.com/send?phone=2348122214307&text=Hi%2C%20*Ohreassa.*%20My%20name%20is%20*${name}*%20%2C%20email%20is%3A%20*${email}*%20%2C%20and%20delievery%20address%20is%3A%20*${address}.*%20I%20have%20some%20products%20in%20your%20store%20that%20I%20am%20interested%20in.%20*${cartItemNames()}*%20for%20a%20total%20of%20*₦${total}*`
+      `https://api.whatsapp.com/send?phone=2348020631346&text=Hi%2C%20*Ohreassa.*%20My%20name%20is%20*${name}*%20%2C%20email%20is%3A%20*${email}*%20%2C%20and%20delievery%20address%20is%3A%20*${address}.*%20I%20have%20some%20products%20in%20your%20store%20that%20I%20am%20interested%20in.%20*${cartItemNames()}*%20for%20a%20total%20of%20*₦${total}*`
     );
 
     toast.success(
