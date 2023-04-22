@@ -68,58 +68,10 @@ export default function ProductDetails({
 
   // Handle Variation Prices
   const getVariationPrice = () => {
-    if (product.name === "RECHARGABLE BULBS" && variation === "7 WATTS") {
-      return 1500 * quantity;
-    } else if (
-      product.name === "RECHARGABLE BULBS" &&
-      variation === "10 WATTS"
-    ) {
-      return 1700 * quantity;
-    } else if (
-      product.name === "RECHARGABLE BULBS" &&
-      variation === "12 WATTS"
-    ) {
-      return 1800 * quantity;
-    } else if (
-      product.name === "RECHARGABLE BULBS" &&
-      variation === "15 WATTS"
-    ) {
-      return 1900 * quantity;
-    } else if (
-      product.name === "RECHARGABLE BULBS" &&
-      variation === "18 WATTS"
-    ) {
-      return 2000 * quantity;
-    } else if (
-      product.name === "RECHARGABLE BULBS" &&
-      variation === "20 WATTS"
-    ) {
-      return 2200 * quantity;
-    } else if (
-      product.name === "RECHARGABLE BULBS" &&
-      variation === "24 WATTS"
-    ) {
-      return 2800 * quantity;
-    } else if (
-      product.name === "USB RECHARGABLE BULBS" &&
-      variation === "12 WATTS"
-    ) {
-      return 2900 * quantity;
-    } else if (
-      product.name === "USB RECHARGABLE BULBS" &&
-      variation === "26 WATTS"
-    ) {
-      return 3400 * quantity;
-    } else if (
-      product.name === "USB RECHARGABLE BULBS" &&
-      variation === "45 WATTS"
-    ) {
-      return 3900 * quantity;
-    } else if (
-      product.name === "USB RECHARGABLE BULBS" &&
-      variation === "60 WATTS"
-    ) {
-      return 4500 * quantity;
+    if (product.name === "Solar Street Light" && variation === "200W") {
+      return 14000 * quantity;
+    } else if (product.name === "Solar Street Light" && variation === "300W") {
+      return 145000 * quantity;
     } else {
       return numberToCurrency(product.price * quantity);
     }

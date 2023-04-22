@@ -43,7 +43,7 @@ export default function SomeProducts({
 
       {/* List Some Products */}
       <section className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center place-content-center">
-        {products.slice(0, 6).map((product: any) => (
+        {products.slice(0, 12).map((product: any) => (
           <motion.div
             key={product._id}
             whileHover={{ scale: 1.1 }}

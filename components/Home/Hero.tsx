@@ -14,8 +14,9 @@ export default function Hero() {
           Ohreassa Technology
         </h1>
 
-        <h4 className="text-white lg:text-xl font-medium my-5 text-center">
-          The Best Place To Get Your Solar Electronics
+        <h4 className="text-white lg:text-xl font-medium my-5 text-center px-10 lg:px-60">
+          The Best Place To Get Your Rechargable Lights, Solar Street Lights,
+          Solar Generators, and More..
         </h4>
 
         <Link href={"/shop"}>
