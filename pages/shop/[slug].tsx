@@ -68,11 +68,7 @@ export default function ProductDetails({
 
   // Handle Variation Prices
   const getVariationPrice = () => {
-    if (product.name === "Solar Street Light" && variation === "200W")
-      return 14000 * quantity;
-    else if (product.name === "Solar Street Light" && variation === "300W")
-      return 145000 * quantity;
-    else if (product.name === "USB Rechargable Lamp" && variation === "12W")
+    if (product.name === "USB Rechargable Lamp" && variation === "12W")
       return 2000 * quantity;
     else if (product.name === "USB Rechargable Lamp" && variation === "26W")
       return 3500 * quantity;
