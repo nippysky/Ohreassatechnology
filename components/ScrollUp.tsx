@@ -45,7 +45,7 @@ export default function ScrollUp() {
               cursor: "pointer",
               background: "#951B81",
               padding: "0.5rem",
-              borderRadius: "4px",
+              borderRadius: "200px",
               border: 0,
             }}
           >

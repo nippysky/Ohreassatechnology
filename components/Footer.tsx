@@ -30,8 +30,19 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="text-center my-10 text-mainYellow font-black text-4xl">
+      <div className="text-center mt-10 mb-5 text-mainYellow font-black text-4xl">
         Ohreassa Technology
+      </div>
+
+      <div className="text-center mb-10 px-10">
+        <p className="text-[0.85rem] text-white font-semibold tracking-wide">
+          No. 2 St. Patrick’s road opposite St. Patrick’s church building Alaba
+          international
+        </p>
+
+        <p className="text-[0.85rem] text-white font-semibold tracking-wide my-2">
+          Call Us On: 08122214307
+        </p>
       </div>
 
       <div className="w-full h-[1px] bg-white" />

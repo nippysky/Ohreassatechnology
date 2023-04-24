@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Link from "next/link";
 import client from "@/utils/client";
 import SomeProducts from "@/components/Home/SomeProducts";
 import FeatureCard from "@/components/FeatureCard";
@@ -32,6 +33,15 @@ export default function Home({ products }: { products: ProductsObject }) {
 
       <main>
         <SomeProducts products={products} />
+
+        <div className="w-full flex justify-center items-center mb-10">
+          <Link href={"/shop"}>
+            <button className="font-semibold border bg-mainPurple hover:bg-mainYellow text-white text-center text-clayBrown py-3 px-20 rounded-full">
+              View All Products
+            </button>
+          </Link>
+        </div>
+
         <FeatureCard />
       </main>
 

@@ -35,7 +35,7 @@ export default function Navbar() {
     <header className="w-full flex gap-10 justify-between items-center py-3 bg-mainPurple px-5 lg:px-20">
       {/* Logo */}
       <Link href={"/"}>
-        <div className="w-[30%] text-white font-semibold text-[1.5rem]">
+        <div className="w-[20%] text-white font-semibold text-[1.5rem]">
           <Image
             src={Logo}
             alt="Ohreassa Logo"
@@ -46,12 +46,12 @@ export default function Navbar() {
         </div>
       </Link>
 
-      <nav className="w-[70%] flex gap-10 justify-end items-center">
+      <nav className="w-[80%] flex gap-10 justify-end items-center">
         {/* menu links */}
         <div className="lg:flex gap-10 justify-end items-center hidden">
           <Link href={"/solar-street-light"}>
             <div
-              className={`font-semibold text-[0.85rem] tracking-wider ${
+              className={`font-semibold text-[0.75rem] tracking-widest uppercase ${
                 asPath === "/solar-street-light"
                   ? "bg-mainYellow py-1 px-3 rounded-full text-mainPurple"
                   : "text-white"
@@ -63,7 +63,7 @@ export default function Navbar() {
 
           <Link href={"/solar-flood-light"}>
             <div
-              className={`font-semibold text-[0.85rem] tracking-wider ${
+              className={`font-semibold text-[0.75rem] tracking-widest uppercase ${
                 asPath === "/solar-flood-light"
                   ? "bg-mainYellow py-1 px-3 rounded-full text-mainPurple"
                   : "text-white"
@@ -75,7 +75,7 @@ export default function Navbar() {
 
           <Link href={"/rechargables"}>
             <div
-              className={`font-semibold text-[0.85rem] tracking-wider ${
+              className={`font-semibold text-[0.75rem] tracking-widest uppercase ${
                 asPath === "/rechargables"
                   ? "bg-mainYellow py-1 px-3 rounded-full text-mainPurple"
                   : "text-white"
@@ -95,7 +95,7 @@ export default function Navbar() {
           <a href={"/shop/cart"}>
             <div className={`flex relative`}>
               {/* bag */}
-              <RiShoppingCartLine size={25} />
+              <RiShoppingCartLine size={22} />
               {/* count circle */}
               <div
                 className={`w-[16px] h-[16px] bg-mainYellow rounded-full absolute bottom-0 -right-2 flex justify-center items-center text-mainBlue ${
@@ -132,7 +132,7 @@ export default function Navbar() {
             {MENULINKS.map((link, index) => (
               <div
                 key={index}
-                className="text-passengerWhite text-[0.9rem] font-medium tracking-wider"
+                className="text-passengerWhite text-[0.75rem] font-medium tracking-widest uppercase"
               >
                 <Link href={link.path}>{link.name}</Link>
               </div>

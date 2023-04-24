@@ -68,13 +68,46 @@ export default function ProductDetails({
 
   // Handle Variation Prices
   const getVariationPrice = () => {
-    if (product.name === "Solar Street Light" && variation === "200W") {
+    if (product.name === "Solar Street Light" && variation === "200W")
       return 14000 * quantity;
-    } else if (product.name === "Solar Street Light" && variation === "300W") {
+    else if (product.name === "Solar Street Light" && variation === "300W")
       return 145000 * quantity;
-    } else {
-      return numberToCurrency(product.price * quantity);
-    }
+    else if (product.name === "USB Rechargable Lamp" && variation === "12W")
+      return 2000 * quantity;
+    else if (product.name === "USB Rechargable Lamp" && variation === "26W")
+      return 3500 * quantity;
+    else if (product.name === "USB Rechargable Lamp" && variation === "45W")
+      return 4000 * quantity;
+    else if (product.name === "USB Rechargable Lamp" && variation === "60W")
+      return 4700 * quantity;
+    else if (product.name === "Emergency Bulb" && variation === "18W")
+      return 1900 * quantity;
+    else if (
+      product.name === "Rechargable Bulb (Blue Series)" &&
+      variation === "11W"
+    )
+      return 1100 * quantity;
+    else if (
+      product.name === "Rechargable Bulb (Blue Series)" &&
+      variation === "28W"
+    )
+      return 1600 * quantity;
+    else if (
+      product.name === "Rechargable Bulb (Blue Series)" &&
+      variation === "40W"
+    )
+      return 2200 * quantity;
+    else if (
+      product.name === "Solar / Electric Rechargable Lamp" &&
+      variation === "85W"
+    )
+      return 4500 * quantity;
+    else if (
+      product.name === "Solar / Electric Rechargable Lamp" &&
+      variation === "95W"
+    )
+      return 6500 * quantity;
+    else return numberToCurrency(product.price * quantity);
   };
 
   // Fucntion To Display Inline Video
