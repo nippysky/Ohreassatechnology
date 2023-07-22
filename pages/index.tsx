@@ -22,7 +22,7 @@ export default function Home({ products }: { products: ProductsObject }) {
   return (
     <>
       <Head>
-        <title>Goutdetee - Home</title>
+        <title>Ohreassa Technolgy - Home</title>
         <meta name="description" content="Ohreassa Technology." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -37,7 +37,7 @@ export default function Home({ products }: { products: ProductsObject }) {
         <div className="w-full flex justify-center items-center mb-10">
           <Link href={"/shop"}>
             <button className="font-semibold border bg-mainPurple hover:bg-mainYellow text-white text-center text-clayBrown py-3 px-20 rounded-full">
-              View Our Products
+              View All Products
             </button>
           </Link>
         </div>
