@@ -22,7 +22,7 @@ export default function Home({ products }: { products: ProductsObject }) {
   return (
     <>
       <Head>
-        <title>Ohreassa Technolgy - Home</title>
+        <title>Goutdetee - Home</title>
         <meta name="description" content="Ohreassa Technology." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
