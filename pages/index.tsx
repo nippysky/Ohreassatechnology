@@ -37,7 +37,7 @@ export default function Home({ products }: { products: ProductsObject }) {
         <div className="w-full flex justify-center items-center mb-10">
           <Link href={"/shop"}>
             <button className="font-semibold border bg-mainPurple hover:bg-mainYellow text-white text-center text-clayBrown py-3 px-20 rounded-full">
-              View All Products
+              View Our Products
             </button>
           </Link>
         </div>
